@@ -1,0 +1,22 @@
+name: SomethingLibrary
+options:
+  minimumXcodeGenVersion: 2.0.0
+  bundleIdPrefix: com.component.view.carousel
+  deploymentTarget:
+    iOS: 11.0
+targets:
+  SomethingLibrary:
+    type: framework
+    platform: iOS
+    sources: 
+      - Sources
+    scheme:
+      testTargets:
+        - Tests
+  Tests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: 
+      - Tests
+    dependencies:
+      - target: SomethingLibrary
