@@ -1,0 +1,2 @@
+# XcodeGenSample
+Sample for XcodeGen
